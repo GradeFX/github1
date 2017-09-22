@@ -1,0 +1,1 @@
+window.location.href="https://gradefx.carbonmade.com/";

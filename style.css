@@ -1,0 +1,110 @@
+html {
+font-family : "Comic Sans MS";
+background-color : #f2f2f2;
+}
+#wrapper {
+background-color : #f2f2f2;
+height : 100%;
+}
+#grid {
+width : 100%;
+}
+nav {
+width : 100%;
+position : fixed;
+list-style-type : none;
+background-color : rgba(250, 250, 250, 0.8);
+box-shadow : 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+z-index : 100;
+}
+nav a {
+padding-right : 50px;
+padding-left : 10px;
+}
+nav li {
+float : left;
+}
+nav li a {
+display : block;
+color : black;
+text-align : center;
+padding : 15px;
+text-decoration : none;
+text-shadow : 0 2px 9px rgba(150, 150, 150, 0.91);
+transition : background-color 1s, text-shadow 1s;
+transition-timing-function : ease;
+}
+nav li a:hover {
+background-color : rgba(193, 193, 193, 0.54);
+text-shadow : 0 10px 6px rgba(150, 150, 150, 1);
+}
+.picture {
+margin-top : 750px;
+margin : auto;
+background-color : #ededed;
+width : 70%;
+box-shadow : 0 15px 57px 0 rgba(0, 0, 0, 0.63);
+text-align : center;
+transition : transform 0.25s, box-shadow 0.4s;
+transition-timing-function : ease;
+}
+.picture:hover {
+transform : scale(1.1);
+box-shadow : 0 22px 70px 0 rgba(0, 0, 0, 0.83);
+}
+.picture p {
+padding-bottom : 15px;
+}
+.picture img {
+width : 100%;
+}
+.tinypic {
+align-content : center;
+float : left;
+margin : 3.6%;
+padding : 5px;
+background-color : #ededed;
+width : 400px;
+box-shadow : 0 15px 57px 0 rgba(0, 0, 0, 0.33);
+text-align : center;
+transition : transform 0.25s, box-shadow 0.4s;
+transition-timing-function : ease;
+}
+.tinypic:hover {
+transform : scale(1.15);
+box-shadow : 0 22px 70px 0 rgba(0, 0, 0, 0.5);
+}
+.tinypic img {
+width : 100%;
+}
+.textt {
+width : 85%;
+color : #999999;
+font-size : 14pt;
+padding : 15px;
+margin-top : 150px;
+margin-bottom : 150px;
+align-content : center;
+margin-left : auto;
+margin-right : auto;
+clear : both;
+}
+iframe {
+margin-top : 100px;
+margin-bottom : 150px;
+width : 100%;
+height : 250px;
+}
+footer {
+margin-top : 900px;
+color : #e8e8e8;
+bottom : 0;
+width : 100%;
+text-align : center;
+background : #454545;
+z-index : 100;
+padding-bottom : 60px;
+padding-top : 60px;
+position : relative;
+clear : both;
+}

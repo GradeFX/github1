@@ -1,0 +1,10 @@
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+Options -Indexes
+ErrorDocument 404 /404/404.html
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(www\.GradeFX\.de/quicktoggle)(:80)? [NC]
+RewriteRule ^(.*) http://GradeFX.de/quicktoggle/$1 [R=301,L]
+DirectoryIndex quicktoggle.html       
+order deny,allow

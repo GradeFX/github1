@@ -1,0 +1,15 @@
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+Options Indexes
+AuthUserFile /pw/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Please enter your ID and password"
+AuthType Basic
+require valid-user 
+ErrorDocument 404 /404/
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(www\.GradeFX\.de)(:80)? [NC]
+RewriteRule ^(.*) http://GradeFX.de/$1 [R=301,L]
+DirectoryIndex index.html       
+order deny,allow

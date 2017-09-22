@@ -1,0 +1,9 @@
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+Options -Indexes
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(www\.GradeFX\.de/404)(:80)? [NC]
+RewriteRule ^(.*) http://GradeFX.de/404/$1 [R=301,L]
+DirectoryIndex 404.html       
+order deny,allow
